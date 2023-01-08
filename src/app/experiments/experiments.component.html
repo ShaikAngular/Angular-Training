@@ -1,0 +1,13 @@
+<p>experiments works!</p>
+
+<p [ngStyle]="{'color':'red', 'font-size':'16px'}">
+    ngStyle
+</p>
+
+<div *ngFor="let user of users" [ngClass]="{'highlight':user.userName=='Rajarshi'}">
+    {{user.userName}}
+</div>
+
+<div *ngIf="isNeeded">
+display text when it is true
+</div>

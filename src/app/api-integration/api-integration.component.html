@@ -1,0 +1,58 @@
+<p>api-integration works!</p>
+<div>
+    <p> Play with date Pipe</p>
+    Original:{{DOB }} <br>
+    short form:{{DOB | date:"short"}} <br>
+    medium: {{DOB | date:"medium" | uppercase}} <br>
+    full date: {{DOB | date:"dd/MM/yyyy"}}
+</div>
+<div> 
+    <p>Currency Pipe</p>
+    {{salary }} <br>
+    {{salary | currency:'INR':true:'1.3-3'}}
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Company</th>
+        <th>Age</th>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let list of employeeList; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{list.name | lowercase | testPipe:list.gender : list.age }}</td>
+            <td>{{list.gender}}</td>
+            <td>{{list.company}}</td>
+            <td>{{list.age}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <th>S.No</th>
+        <th>ID</th>
+        <td>Name</td>
+        <th>Gender</th>
+        <th>Age</th>
+        <th>State</th>
+        <th>City</th>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let list of  personList; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{list.id}}</td>
+            <td>{{list.name}}</td>
+            <td>{{list.gender}}</td>
+            <td>{{list.age}}</td>
+            <td>{{list.address.state}}</td>
+            <td>{{list.address.city}}</td>
+        </tr>
+    </tbody>
+</table>
+

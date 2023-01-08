@@ -1,0 +1,12 @@
+<p>home page</p>
+<h1>Reactive Forms</h1>
+
+<form [formGroup]="demoForm">
+    first number<input type="number" value="fnumber" id="fnumber" formControlName="firstNumber">
+    second number<input type="number" value="snumber" id="snumber" formControlName="secondNumber">
+    <button class="btn btn-info" (click)="total()">Total</button>
+    Total is <p>{{result}}</p>
+</form>
+
+
+

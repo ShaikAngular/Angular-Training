@@ -1,0 +1,5 @@
+<p>about works!</p>
+first number<input type="number" value="fnumber" id="fnumber" #firstNumber>
+second number<input type="number" value="snumber" id="snumber" #secondNumber>
+<button class="btn btn-info" (click)="total(firstNumber,secondNumber)">Total</button>
+result <input type="text" [(ngModel)]="result" disabled>
