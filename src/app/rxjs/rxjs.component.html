@@ -1,1 +1,13 @@
 <p>rxjs works!</p>
+
+<button class="btn btn-info mx-5" (click)="rxjsMap()">RxJs-Map</button>
+<button class="btn btn-info" (click)="rxjsFilter()">RxJs-Filter</button><br>
+Actual Array <p>{{a |json}}</p>
+
+square using RxJs Map <p> {{mapArray |json}} </p>
+
+Even number filteration using RxJs filte <p>{{filterArr |json}}</p>
+
+<h1>Debounce Time</h1>
+<input type="text" id="search" />
+{{debouncer}}
