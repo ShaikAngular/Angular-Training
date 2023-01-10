@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { ExperimentsComponent } from './experiments/experiments.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxPaginationModule } from 'ngx-pagination';
 import { ApiIntegrationComponent } from './api-integration/api-integration.component';
 import { TestPipePipe } from './test-pipe.pipe';
 import { RxjsComponent } from './rxjs/rxjs.component';
@@ -29,7 +30,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
    ],
   providers: [],
   bootstrap: [AppComponent]
