@@ -12,6 +12,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { ApiIntegrationComponent } from './api-integration/api-integration.component';
 import { TestPipePipe } from './test-pipe.pipe';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { DynamicFieldGenerationComponent } from './dynamic-field-generation/dynamic-field-generation.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     ExperimentsComponent,
     ApiIntegrationComponent,
     TestPipePipe,
-    RxjsComponent
+    RxjsComponent,
+    DynamicFieldGenerationComponent
     
   ],
   imports: [

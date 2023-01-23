@@ -1,17 +1,18 @@
 
-<div class="container m-5">
+<div class="container m-2">
     <div class="">
         <h1 class="text-success">Menu Section</h1>
         
-        <button class="btn btn-primary mr-5" [routerLink]="['/home']">Home</button>
-        <button class="btn btn-primary m-5" [routerLink]="['/about']">About</button>
-        <button class="btn btn-primary m-5" [routerLink]="['/experiments']">Experiments</button>
-        <button class="btn btn-primary m-5" [routerLink]="['/api']">API Integration</button>
-        <button class="btn btn-primary m-5" [routerLink]="['/rxjs']">RxJs</button>
+        <button class="btn btn-primary mr-2" [routerLink]="['/home']">Home</button>
+        <button class="btn btn-primary m-2" [routerLink]="['/about']">About</button>
+        <button class="btn btn-primary m-2" [routerLink]="['/experiments']">Experiments</button>
+        <button class="btn btn-primary m-2" [routerLink]="['/api']">API Integration</button>
+        <button class="btn btn-primary m-2" [routerLink]="['/rxjs']">RxJs</button>
+        <button class="btn btn-primary m-2" [routerLink]="['/FieldGeneration']">DynamicFieldGeneration</button>
     </div>
     
     
-    <div>
+    <div class="border">
         <h2 class="text-danger">Body Section</h2>
         <router-outlet></router-outlet>
     </div>

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ApiIntegrationComponent } from './api-integration/api-integration.component';
+import { DynamicFieldGenerationComponent } from './dynamic-field-generation/dynamic-field-generation.component';
 import { ExperimentsComponent } from './experiments/experiments.component';
 import { HomeComponent } from './home/home.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
@@ -30,6 +31,10 @@ const routes: Routes = [
   {
     path:'rxjs',
     component:RxjsComponent
+  },
+  {
+    path:'FieldGeneration',
+    component:DynamicFieldGenerationComponent
   },
   {
     path:'**',

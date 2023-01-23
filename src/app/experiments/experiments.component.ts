@@ -17,7 +17,7 @@ export class ExperimentsComponent implements OnInit {
     {
       "userId":2,
       "userName":"Rajarshi"
-    },
+    }
 
   ]
   constructor() { }

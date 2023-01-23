@@ -22,10 +22,13 @@ export class HomeComponent implements OnInit {
   }
 
   total(){
-    console.log("form data", this.demoForm.value.firstNumber, this.demoForm.value.secondNumber);
-    console.log("type of", typeof(this.demoForm.value.firstNumber));
-    this.result = this.service.add(this.demoForm.value.firstNumber, this.demoForm.value.secondNumber);
-    console.log("result is--->", this.result);
+    ///console.log("form data", this.demoForm.value.firstNumber, this.demoForm.value.secondNumber);
+    //console.log("type of", typeof(this.demoForm.value.firstNumber));
+    if(this.demoForm && this.demoForm.value && this.demoForm.value.firstNumber && this.demoForm.value.secondNumber){
+      this.result = this.service.add(this.demoForm.value.firstNumber, this.demoForm.value.secondNumber);
+      console.log("result is--->", this.result);
+    }
+    
   }
 
 

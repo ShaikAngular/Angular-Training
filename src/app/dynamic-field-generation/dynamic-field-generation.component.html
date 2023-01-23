@@ -1,0 +1,13 @@
+<p>dynamic-field-generation works!</p>
+<div>
+    <form [formGroup]="SimpleForm">
+        <div formArrayName="hobbies">
+            <h4>Hobbies</h4>
+            <button class="btn btn-info" type="button" (click)="onAddHobby()">Add Hobby</button>
+
+            <div class="form-group" *ngFor="let hobbyControl of SimpleForm.get('hobbies').value; let i=index">
+                <input type="text" class="form-control" [formControlName]="i">
+            </div>
+        </div>
+    </form>
+</div>

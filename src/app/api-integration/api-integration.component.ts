@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { filter, from, map, Observable, tap } from 'rxjs';
 import { TestService } from '../services/test.service';
 import { Company } from '../utils/company';
-
+import { PaginatePipe } from 'ngx-pagination';
 @Component({
   selector: 'app-api-integration',
   templateUrl: './api-integration.component.html',
