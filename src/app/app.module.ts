@@ -13,6 +13,7 @@ import { ApiIntegrationComponent } from './api-integration/api-integration.compo
 import { TestPipePipe } from './test-pipe.pipe';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { DynamicFieldGenerationComponent } from './dynamic-field-generation/dynamic-field-generation.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { DynamicFieldGenerationComponent } from './dynamic-field-generation/dyna
     ApiIntegrationComponent,
     TestPipePipe,
     RxjsComponent,
-    DynamicFieldGenerationComponent
+    DynamicFieldGenerationComponent,
+    LoginPageComponent
     
   ],
   imports: [

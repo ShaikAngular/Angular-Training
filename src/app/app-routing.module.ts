@@ -5,6 +5,7 @@ import { ApiIntegrationComponent } from './api-integration/api-integration.compo
 import { DynamicFieldGenerationComponent } from './dynamic-field-generation/dynamic-field-generation.component';
 import { ExperimentsComponent } from './experiments/experiments.component';
 import { HomeComponent } from './home/home.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 
 const routes: Routes = [
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path:'FieldGeneration',
     component:DynamicFieldGenerationComponent
+  },
+  {
+    path:'Login',
+    component:LoginPageComponent
   },
   {
     path:'**',
