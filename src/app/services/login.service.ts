@@ -14,4 +14,11 @@ export class LoginService {
       tap(response=>console.log('response-->', response))
     )
   }
+
+  
+  postDetails(username, password){
+    return this.http.post('/Login-Details',{username, password}).pipe(
+      tap(response=>console.log('response-->', response))
+    )
+  }
 }

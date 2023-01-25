@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-12 roundedTextBox mb-3">
             <label>Username</label>
-            <input type="email" class="form-control mb-2" id="inputEmail" formControlName="username" placeholder="Enter Username">
+            <input type="text" #username class="form-control mb-2" id="inputEmail" formControlName="username" placeholder="Enter Username">
             <!-- <small id="emailHelp" class="form-text text-muted ml-2">We'll never share your email with anyone else.</small> -->
             <div *ngIf="submitted && formControl['username'].errors" class="text-danger">
               
@@ -14,7 +14,7 @@
           </div>
           <div class="col-md-12 roundedTextBox mb-3">
             <label>Password</label>
-            <input type="password" class="form-control mb-2" id="inputPassword" formControlName="password" placeholder="Enter Password">
+            <input type="password" #password class="form-control mb-2" id="inputPassword" formControlName="password" placeholder="Enter Password">
             <div *ngIf="submitted && formControl['password'].errors" class="text-danger">
               <div *ngIf="formControl['password'].errors['required']">Password is required.</div>
               <div *ngIf="formControl['password'].errors['pattern']">
@@ -31,7 +31,8 @@
         </div>
         <br>
         <div class="buttons text-center">
-          <button class="btn-customBlue mr-2" type="submit" >Login</button>
+          <!-- <button class="btn-customBlue mr-2" type="submit" >Login</button> -->
+          <button class="btn btn-primary" (click)="postLogin()">Login</button>
         </div>
       </form>
     </div>

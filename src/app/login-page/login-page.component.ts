@@ -2,6 +2,7 @@ import { Component, OnInit, VERSION  } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
 import { map } from 'rxjs/operators';
+import { tap } from 'rxjs';
 import { LoginService } from '../services/login.service';
 import { Login } from '../utils/login';
 
@@ -83,5 +84,14 @@ export class LoginPageComponent implements OnInit {
     // } else{
     //   window.alert("credentials not matched")
     // }
+  }
+
+  postLogin(){
+    console.log("username-->", this.loginForm.value.username, "password-->", this.loginForm.value.password);
+    this.loginService.postDetails(this.loginForm.value.username, this.loginForm.value.password)
+    .pipe(
+      tap(a=>console.log('a-->',a))
+    )
+    .subscribe()
   }
 }
